@@ -298,7 +298,7 @@ def resize_and_upscale(input_image, resolution):
     """Resize and upscale the input image to the target resolution."""
     upscale_progress = tqdm(total=3, desc="Upscaling", unit="step")
     
-    scale = 2 if resolution <= 2048 else 4
+    scale = 2 if resolution <= 1024 else 4
     input_image = input_image.convert("RGB")
     W, H = input_image.size
     
@@ -693,7 +693,7 @@ def main():
                     with gr.Column():
                         resolution = gr.Slider(
                             minimum=256, 
-                            maximum=2048, 
+                            maximum=1024, 
                             value=512, 
                             step=256, 
                             label="Resolution",
