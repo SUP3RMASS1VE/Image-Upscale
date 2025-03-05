@@ -1,0 +1,12 @@
+opencv-python
+diffusers==0.27.2
+transformers>=4.30.0
+accelerate>=0.20.0
+safetensors>=0.3.1
+peft>=0.4.0
+gradio==3.32.0
+pydantic<2.0.0
+pillow>=9.5.0
+huggingface_hub==0.23.0
+numpy>=1.24.0
+git+https://github.com/doevent/Real-ESRGAN.git
