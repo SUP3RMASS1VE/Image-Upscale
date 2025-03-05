@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "3.2",
   title: "Image-Upscale",
-  description: "",
+  description: "Image Upscale is an AI-powered application designed to enhance and upscale images using advanced techniques like Stable Diffusion and Tile ControlNet. It provides high-quality image enhancement with options for HDR effects and customizable settings.",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("env")
